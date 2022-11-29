@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BarberShop</title>
+    <!-- slider swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" data-header>
+      <div class="header__container container">
+        <!-- logo -->
+        <a class="logo header__logo" href="#">
+          <svg class="logo__img" width="68" height="56">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <!-- nav -->
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--current" href="#about"> About </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#price"> Services and prices </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#team"> Barbers </a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#form"> Contacts </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contact/form -->
+        <div class="header__group">
+          <a class="header__contact" href="tel:380441111111"
+            >+38 044 111 11 11</a
+          >
+
+          <button class="header__btn btn" type="button" data-modal-open>
+            Online-booking
+          </button>
+        </div>
+
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="swiper__container container">
+          <!-- left side -->
+          <div class="slider__list-box">
+            <ul class="slider__list">
+              <li class="slider__list-item">
+                <a
+                  class="slider__list-link"
+                  href="https://www.youtube.com/"
+                  target="_blank"
+                  rel="noreferrer nofollow noopener"
+                  >YouTube</a
+                >
+              </li>
+
+              <li class="slider__list-item">
+                <a
+                  class="slider__list-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer nofollow noopener"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/slider/desk/img3@1x.webp 1x,
+                      ./images/slider/desk/img3@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/slider/desk/img3@1x.jpg 1x,
+                      ./images/slider/desk/img3@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/tab/img3@1x.webp 1x,
+                      ./images/slider/tab/img3@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/tab/img3@1x.jpg 1x,
+                      ./images/slider/tab/img3@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider/mob/img3@1x.webp 1x,
+                      ./images/slider/mob/img3@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider/mob/img3@1x.jpg 1x,
+                      ./images/slider/mob/img3@2x.jpg 2x
+                    "
+                  />
+
+                  <img src="./images/slider/tab/img3@1x.jpg" alt="" />
+                </picture>
+              </div>
+
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/slider/desk/img2@1x.webp 1x,
+                      ./images/slider/desk/img2@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/slider/desk/img2@1x.jpg 1x,
+                      ./images/slider/desk/img2@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/tab/img2@1x.webp 1x,
+                      ./images/slider/tab/img2@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/tab/img2@1x.jpg 1x,
+                      ./images/slider/tab/img2@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider/mob/img2@1x.webp 1x,
+                      ./images/slider/mob/img2@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider/mob/img2@1x.jpg 1x,
+                      ./images/slider/mob/img2@2x.jpg 2x
+                    "
+                  />
+
+                  <img src="./images/slider/tab/img2.jpg" alt="" />
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/slider/desk/img1@1x.webp 1x,
+                      ./images/slider/desk/img1@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/slider/desk/img1@1x.jpg 1x,
+                      ./images/slider/desk/img1@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/tab/img1@1x.webp 1x,
+                      ./images/slider/tab/img1@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/tab/img1@1x.jpg 1x,
+                      ./images/slider/tab/img1@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider/mob/img1@1x.webp 1x,
+                      ./images/slider/mob/img1@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/slider/mob/img1@1x.jpg 1x,
+                      ./images/slider/mob/img1@2x.jpg 2x
+                    "
+                  />
+
+                  <img src="./images/slider/tab/img1.jpg" alt="" />
+                </picture>
+              </div>
+              ...
+            </div>
+
+            <div class="s__box">
+              <div class="swiper-button-prev">Back</div>
+              <div class="swiper-button-next">Forward</div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <div class="slider__text">
+              <p class="slider__uppertitle uppertitle">
+                A hair salon for men in Kyiv
+              </p>
+              <h2 class="slider__title">BarberShop</h2>
+              <p class="slider__undertitle">
+                We are experts in trendy men’s haircuts. We work quickly,
+                carefully and with style.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about" id="about">
+        <div class="about__container container">
+          <ul class="about__list">
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/desk/img1@1x.webp 1x,
+                    ./images/about/desk/img1@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/desk/img1@1x.jpg 1x,
+                    ./images/about/desk/img1@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/tab/img1@1x.webp 1x,
+                    ./images/about/tab/img1@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/tab/img1@1x.jpg 1x,
+                    ./images/about/tab/img1@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="about__img"
+                  src="./images/about/about-first.jpg"
+                  alt="beard shaving"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+            <li class="about__item">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/desk/img2@1x.webp 1x,
+                    ./images/about/desk/img2@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/about/desk/img2@1x.jpg 1x,
+                    ./images/about/desk/img2@2x.jpg 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/tab/img2@1x.webp 1x,
+                    ./images/about/tab/img2@2x.webp 2x
+                  "
+                />
+
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about/tab/img2@1x.jpg 1x,
+                    ./images/about/tab/img2@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="about__img"
+                  src="./images/about/about-second.jpg"
+                  alt="haircut"
+                  loading="lazy"
+                />
+              </picture>
+            </li>
+          </ul>
+
+          <div class="about__right-side">
+            <p class="uppertitle">About</p>
+            <h2 class="title about__title">Best Barbershop in your city</h2>
+            <p class="undertitle about__undertitle">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about__text about__text-setting">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+
+            <button class="about__btn btn" type="button">Online-Booking</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- services and prices -->
+      <section class="price" id="price">
+        <div class="container">
+          <p class="uppertitle uppertitle--dark-theme">
+            Spend your time with the best masters
+          </p>
+
+          <h2 class="price__title title title--white-theme">
+            Services and prices
+          </h2>
+
+          <div class="price__box price__box-setting">
+            <ul class="price__list price__list--left">
+              <li class="price__item">
+                <span class="price__span">Men’s haircut</span>
+                <p class="price__text">from 300 uah.</p>
+              </li>
+
+              <li class="price__item">
+                <span class="price__span">Beard trim</span>
+                <p class="price__text">from 300 uah.</p>
+              </li>
+              <li class="price__item">
+                <span class="price__span">Mustache trim</span>
+                <p class="price__text">from 200 uah.</p>
+              </li>
+              <li class="price__item">
+                <span class="price__span">Straight razor shave</span>
+                <p class="price__text">from 200 uah.</p>
+              </li>
+            </ul>
+
+            <ul class="price__list price__list--right">
+              <li class="price__item">
+                <span class="price__span">Trainee’s haircut</span>
+                <p class="price__text">from 50 uah.</p>
+              </li>
+              <li class="price__item">
+                <span class="price__span">Haircut under the nozzle</span>
+                <p class="price__text">from 200 uah.</p>
+              </li>
+              <li class="price__item">
+                <span class="price__span">Children’s haircut (0-12 y.o.)</span>
+                <p class="price__text">from 300 uah.</p>
+              </li>
+              <li class="price__item">
+                <span class="price__span">Camouflage of gray hair</span>
+                <p class="price__text">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
+
+          <button class="price__btn btn">Online-Booking</button>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <div class="features__container container">
+          <div class="features__box-up">
+            <p class="uppertitle">Old traditional school</p>
+            <h2 class="features__title title">¿Why people come to us?</h2>
+            <p class="undertitle">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
+          <div class="features__box-down">
+            <ul class="features__list">
+              <li class="features__item">
+                <p class="features__quantity">600</p>
+                <p class="features__text">Satisfied customers per day</p>
+              </li>
+
+              <li class="features__item">
+                <p class="features__quantity">50</p>
+                <p class="features__text">Awards for excellent service</p>
+              </li>
+
+              <li class="features__item">
+                <p class="features__quantity">20</p>
+                <p class="features__text">
+                  Kyiv’s best
+                  <br />
+                  barbers
+                </p>
+              </li>
+
+              <li class="features__item">
+                <p class="features__quantity">100</p>
+                <p class="features__text">Gifts for regular customers</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- our barbers -->
+      <section class="team" id="team">
+        <div class="container">
+          <p class="uppertitle team__uppertitle">
+            For true enjoyers of the atmosphere
+          </p>
+          <h2 class="title team__title">Our barbers</h2>
+
+          <ul class="team__list">
+            <!-- John Smith -->
+            <li class="team__item">
+              <div class="team__box">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/desk/img1@1x.webp 1x,
+                      ./images/team/desk/img1@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/desk/img1@1x.jpg 1x,
+                      ./images/team/desk/img1@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team/tab/img1@1x.webp 1x,
+                      ./images/team/tab/img1@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team/tab/img1@1x.jpg 1x,
+                      ./images/team/tab/img1@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team/mob/img1@1x.webp 1x,
+                      ./images/team/mob/img1@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team/mob/img1@1x.jpg 1x,
+                      ./images/team/mob/img1@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="team__img"
+                    src="./images/team/tab/img1@1x.jpg"
+                    alt="john smith"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="team__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eveniet facilis accusantium eaque ab, aut eligendi adipisci.
+                  At assumenda fugit eum!
+                </p>
+              </div>
+              <div class="team__item-box">
+                <h3 class="team__name">John Smith</h3>
+                <p class="team__position">Extreme Barber</p>
+
+                <ul class="team__list-social">
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://www.instagram.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://twitter.com/?lang=en"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://www.facebook.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://linkedin.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Michele Doe -->
+            <li class="team__item">
+              <div class="team__box">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/desk/img2@1x.webp 1x,
+                      ./images/team/desk/img2@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/desk/img2@1x.jpg 1x,
+                      ./images/team/desk/img2@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team/tab/img2@1x.webp 1x,
+                      ./images/team/tab/img2@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team/tab/img2@1x.jpg 1x,
+                      ./images/team/tab/img2@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team/mob/img2@1x.webp 1x,
+                      ./images/team/mob/img2@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team/mob/img2@1x.jpg 1x,
+                      ./images/team/mob/img2@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="team__img"
+                    src="./images/team/tab/img2@1x.jpg"
+                    alt="michele doe"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <p class="team__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eveniet facilis accusantium eaque ab, aut eligendi adipisci.
+                  At assumenda fugit eum!
+                </p>
+              </div>
+              <div class="team__item-box">
+                <h3 class="team__name">Michele Doe</h3>
+                <p class="team__position">Extreme Barber</p>
+
+                <ul class="team__list-social">
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://www.instagram.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://twitter.com/?lang=en"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://www.facebook.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://linkedin.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Alan Black -->
+            <li class="team__item">
+              <div class="team__box">
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/desk/img3@1x.webp 1x,
+                      ./images/team/desk/img3@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/team/desk/img3@1x.jpg 1x,
+                      ./images/team/desk/img3@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team/tab/img3@1x.webp 1x,
+                      ./images/team/tab/img3@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/team/tab/img3@1x.jpg 1x,
+                      ./images/team/tab/img3@2x.jpg 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team/mob/img3@1x.webp 1x,
+                      ./images/team/mob/img3@2x.webp 2x
+                    "
+                  />
+
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/team/mob/img3@1x.jpg 1x,
+                      ./images/team/mob/img3@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    class="team__img"
+                    src="./images/team/tab/img3@1x.jpg"
+                    alt="alan black"
+                    loading="lazy"
+                  />
+                </picture>
+                <p class="team__item-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Eveniet facilis accusantium eaque ab, aut eligendi adipisci.
+                  At assumenda fugit eum!
+                </p>
+              </div>
+              <div class="team__item-box">
+                <h3 class="team__name">Alan Black</h3>
+                <p class="team__position">Extreme Barber</p>
+
+                <ul class="team__list-social">
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://www.instagram.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://twitter.com/?lang=en"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://www.facebook.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="team__item-social">
+                    <a
+                      class="team__link"
+                      href="https://ua.linkedin.com/"
+                      rel="noreferrer nofollow noopener"
+                    >
+                      <svg class="team__icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- gallery -->
+      <section class="gallery">
+        <div class="container">
+          <p class="uppertitle gallery__uppertitle">
+            In Latin, "barba" means "beard"
+          </p>
+          <h2 class="visually-hidden">Gallery</h2>
+
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./images/gallery/rectangle25_270.jpg 270w,
+                  ./images/gallery/rectangle25_330.jpg 330w,
+                  ./images/gallery/rectangle25_418.jpg 418w,
+                  ./images/gallery/rectangle25_540.jpg 540w,
+                  ./images/gallery/rectangle25_660.jpg 660w,
+                  ./images/gallery/rectangle25_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px,
+                  (min-width: 768px) 330px,
+                  (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/rectangle25_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="gallery__item">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./images/gallery/rectangle26_270.jpg 270w,
+                  ./images/gallery/rectangle26_330.jpg 330w,
+                  ./images/gallery/rectangle26_418.jpg 418w,
+                  ./images/gallery/rectangle26_540.jpg 540w,
+                  ./images/gallery/rectangle26_660.jpg 660w,
+                  ./images/gallery/rectangle26_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px,
+                  (min-width: 768px) 330px,
+                  (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/rectangle26_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="gallery__item">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./images/gallery/rectangle27_270.jpg 270w,
+                  ./images/gallery/rectangle27_330.jpg 330w,
+                  ./images/gallery/rectangle27_418.jpg 418w,
+                  ./images/gallery/rectangle27_540.jpg 540w,
+                  ./images/gallery/rectangle27_660.jpg 660w,
+                  ./images/gallery/rectangle27_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px,
+                  (min-width: 768px) 330px,
+                  (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/rectangle27_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+
+            <li class="gallery__item">
+              <img
+                class="gallery__img"
+                srcset="
+                  ./images/gallery/rectangle28_270.jpg 270w,
+                  ./images/gallery/rectangle28_330.jpg 330w,
+                  ./images/gallery/rectangle28_418.jpg 418w,
+                  ./images/gallery/rectangle28_540.jpg 540w,
+                  ./images/gallery/rectangle28_660.jpg 660w,
+                  ./images/gallery/rectangle28_836.jpg 836w
+                "
+                sizes="(min-width: 1200px) 270px,
+                  (min-width: 768px) 330px,
+                  (min-width: 480px) 418px, 100vw"
+                src="./images/gallery/rectangle28_418.jpg"
+                alt="gallery"
+                width="418"
+                height="360"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- form/contacts -->
+      <section class="information" id="form">
+        <div class="container information__container">
+          <div class="form-box">
+            <h2 class="information__title title title--white-theme">
+              Online-Booking
+            </h2>
+            <!-- form -->
+
+            <form class="form" name="form" autocomplete="off" method="post">
+              <div class="form__group information__group">
+                <label class="form__field" name="user-phone">
+                  <input
+                    class="form__input"
+                    type="text"
+                    required
+                    minlength="12"
+                    maxlength="12"
+                    placeholder=" "
+                  />
+                  <span class="form__span">name*</span>
+                </label>
+
+                <label class="form__field" name="user-phone">
+                  <input
+                    class="form__input"
+                    type="tel"
+                    required
+                    minlength="12"
+                    maxlength="12"
+                    placeholder=" "
+                  />
+                  <span class="form__span">phone*</span>
+                </label>
+              </div>
+
+              <div class="form__message-box">
+                <label class="form__message">
+                  <textarea
+                    class="form__textarea"
+                    placeholder=" "
+                    name=""
+                  ></textarea>
+                  <span class="form__span-message">message</span>
+                </label>
+              </div>
+
+              <button class="form__btn btn" type="submit">send</button>
+            </form>
+          </div>
+          <!-- contacts -->
+          <div class="contacts">
+            <div class="information__contacts-box">
+              <h2 class="information__title title title--white-theme">
+                Contacts
+              </h2>
+
+              <ul class="information__list contacts__list">
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link contacts__link--map"
+                    href="https://www.google.com/maps/search/st.+Vasilkovaya,+7A+Kiev,+08132/@50.381177,30.3340526,13z/data=!3m1!4b1?hl=ru-BG"
+                    rel="noreferrer nofollow noopener"
+                    target="_blank"
+                  >
+                    <svg
+                      class="contacts__icon contacts__icon-map"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    <span class="contacts__span"
+                      >st. Vasilkovaya, 7A Kiev, 08132</span
+                    >
+                  </a>
+                </li>
+
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="tel:+380441111111"
+                    rel="noreferrer nofollow noopener"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+
+                <li class="contacts__item">
+                  <a
+                    class="contacts__link"
+                    href="mailto:barbershop@email.com"
+                    rel="noreferrer nofollow noopener"
+                  >
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    <span class="contacts__span-mail"
+                      >barbershop@email.com</span
+                    >
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="information__title-box">
+              <p class="uppertitle uppertitle--white-theme">Working hours</p>
+              <p class="undertitle undertitle--silver-theme">
+                Every day from 9:00 to 22:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container footer__container">
+        <p class="footer__copyright">&copy; Copyright 2020</p>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer nofollow noopener"
+              >Instagram</a
+            >
+          </li>
+
+          <li class="footer__item">
+            <a
+              class="footer__link"
+              href="https://www.youtube.com/"
+              target="_blank"
+              rel="noreferrer nofollow noopener"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- ====================== -->
+    <!-- modal -->
+    <!-- ====================== -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="modal__close-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <button class="modal-menu__close-btn" type="button" data-menu-btn-close>
+          <svg class="modal-menu__close-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <p class="modal__title">Leave your details, we will contact soon</p>
+
+        <form class="modal__form">
+          <div class="modal__group">
+            <!-- ======================== -->
+            <!-- name/mail/phone -->
+            <!-- ======================== -->
+
+            <!-- name -->
+
+            <label class="modal__label">
+              <span class="modal__thumb">
+                <svg class="modal__label-icon" width="20" height="20">
+                  <use href="./images/icons.svg#user-id"></use>
+                </svg>
+              </span>
+              <input
+                class="modal__form-input"
+                type="text"
+                placeholder="Name Surname"
+                name="user_name"
+                pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+                required
+                maxlength="48"
+                autocomplete="off"
+              />
+              <span class="modal__span">Name</span>
+              <span class="modal__info"
+                >User name must be two words separated by space.
+              </span>
+              <!-- input-icons -->
+
+              <svg class="modal__input-icons" width="24" height="24">
+                <use
+                  class="modal__icon-warning"
+                  href="./images/icons.svg#warning"
+                ></use>
+                <use
+                  class="modal__icon-success"
+                  href="./images/icons.svg#success"
+                ></use>
+              </svg>
+            </label>
+
+            <!-- email -->
+
+            <label class="modal__label">
+              <span class="modal__thumb">
+                <svg class="modal__label-icon" width="20" height="20">
+                  <use href="./images/icons.svg#user-mail"></use>
+                </svg>
+              </span>
+              <input
+                class="modal__form-input"
+                name="user_mail"
+                type="email"
+                placeholder="example@mail.com"
+                required
+                maxlength="48"
+                autocomplete="off"
+              />
+
+              <span class="modal__span">Email</span>
+              <span class="modal__info">Please provide a valid email</span>
+              <svg class="modal__input-icons" width="24" height="24">
+                <use
+                  class="modal__icon-warning"
+                  href="./images/icons.svg#warning"
+                ></use>
+                <use
+                  class="modal__icon-success"
+                  href="./images/icons.svg#success"
+                ></use>
+              </svg>
+            </label>
+            <!-- ========================================= -->
+
+            <!-- ========================== -->
+            <!-- phone -->
+            <!-- ========================== -->
+
+            <label class="modal__label modal__label-last">
+              <span class="modal__thumb">
+                <svg class="modal__label-icon" width="20" height="20">
+                  <use href="./images/icons.svg#user-phone"></use>
+                </svg>
+              </span>
+              <input
+                class="modal__form-input"
+                type="tel"
+                name="user__phone"
+                placeholder="+38 (097) 123-45-67"
+                required
+                maxlength="20"
+                autocomplete="off"
+              />
+              <span class="modal__span">Phone</span>
+            </label>
+            <!-- =============================== -->
+
+            <!-- ====================== -->
+            <!-- comment -->
+            <!-- ====================== -->
+            <label class="modal__comment">
+              <textarea
+                class="modal__message"
+                id=""
+                rows="5"
+                placeholder=" "
+              ></textarea>
+              <span class="modal__span-comment">Comment</span>
+            </label>
+          </div>
+          <!-- ======================== -->
+
+          <!-- ======================== -->
+          <!-- Payment -->
+          <!-- ======================== -->
+
+          <div class="modal__group">
+            <label class="modal__field">
+              <input
+                class="modal__payment visually-hidden"
+                type="radio"
+                name="payment"
+                value="user-mastercard"
+                checked
+              />
+              <svg class="modal__payment-icon" width="40" height="30">
+                <use href="./images/icons.svg#user-mc"></use>
+              </svg>
+
+              <span class="modal__payment-text-up"
+                >Visa ending in 4321
+                <span class="modal__payment-text-down">Expires 9/2024</span>
+              </span>
+            </label>
+
+            <label class="modal__field">
+              <input
+                class="modal__payment visually-hidden"
+                type="radio"
+                name="payment"
+                value="user-visa"
+              />
+              <svg class="modal__payment-icon" width="40" height="30">
+                <use href="./images/icons.svg#user-visa"></use>
+              </svg>
+
+              <span class="modal__payment-text-up"
+                >Mastercard ending in 1234
+                <span class="modal__payment-text-down">Expires 7/2025</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- ==================== -->
+          <!-- agreement -->
+          <!-- ==================== -->
+
+          <label class="modal__agreement" data-payment>
+            <input
+              class="modal__agree-input visually-hidden"
+              type="checkbox"
+              checked
+            />
+
+            <svg class="modal__agree-icon" width="16" height="15">
+              <use
+                class="modal__icon-unchecked"
+                href="./images/icons.svg#icon-uncheck"
+              ></use>
+              <use
+                class="modal__icon-checked"
+                href="/images/icons.svg#icon-check"
+              ></use>
+            </svg>
+
+            <span class="modal__agree-span"
+              >Agree to
+              <a class="modal__agree-link" href="#"
+                >terms and conditions</a
+              ></span
+            >
+          </label>
+
+          <!-- ================== -->
+          <!-- modal btn -->
+          <!-- ================== -->
+
+          <button class="modal__btn btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- ============================================================= -->
+
+    <!-- ========================================= -->
+    <!-- MOBILE-MENU -->
+    <!-- ========================================= -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-mobile-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a class="mobile-menu__link" href="#about">About</a></li>
+        <li>
+          <a class="mobile-menu__link" href="#price">Services and prices</a>
+        </li>
+        <li><a class="mobile-menu__link" href="#team">Barbers</a></li>
+        <li><a class="mobile-menu__link" href="#form">Contacts</a></li>
+      </ul>
+
+      <div class="mobile__box">
+        <a class="mobile__contact" href="tel:380441111111">+38 044 111 11 11</a>
+
+        <button class="mobile__btn btn" type="button" data-menu-btn>
+          Online-booking
+        </button>
+      </div>
+      <ul class="mobile__list">
+        <li class="mobile__item">
+          <a
+            class="mobile__link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer nofollow noopener"
+          >
+            Instagram
+          </a>
+        </li>
+
+        <li class="mobile__item">
+          <a
+            class="mobile__link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noreferrer nofollow noopener"
+          >
+            YouTube
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- ================================================= -->
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/header-scroll.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
