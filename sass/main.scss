@@ -1,0 +1,91 @@
+// =====================================
+// utils
+// ===============================
+
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
+@import './utils/animation';
+// =====================================
+
+
+// =====================================
+// base
+// =====================================
+
+@import './base/global-settings';
+@import './base/base';
+@import './base/reset';
+// =====================================
+
+// =====================================
+// slider
+// =====================================
+@import './components/slider/swiper';
+// =====================================
+
+
+// =====================================
+// components
+// ===============================
+
+// ====
+// global-components
+@import './components/global-components/section';
+@import './components/global-components/typography';
+// other components
+@import './components/other-components/btn';
+
+// header
+@import './components/logo';
+@import './components/header';
+// hero
+@import './components/hero';
+//  about
+@import './components/about';
+// price
+@import './components/price';
+// features
+@import './components/features';
+// team
+@import './components/team';
+// gallery
+@import './components/gallery';
+// information
+@import './components/information';
+
+// ============================
+// footer
+// ============================
+
+@import './components/footer';
+// ============================
+
+
+// =======================
+// modal
+// =======================
+
+@import './components/modal/modal';
+
+
+// modal title
+@import './components/modal/modal-title';
+// modal name-phone-email
+@import './components/modal/modal-name-phone-email';
+// modal comment
+@import './components/modal/modal-textarea';
+// modal payment
+@import './components/modal/modal-payment';
+// agreement
+@import './components/modal/modal-agreement';
+// modal btn
+@import './components/modal/modal-btn';
+// =========================================
+
+// ========================
+// mobile menu
+// ========================
+
+@import './components/mobile-menu/mobile-menu';
+//=============================================

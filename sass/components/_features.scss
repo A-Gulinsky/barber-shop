@@ -1,0 +1,169 @@
+// features
+
+.features {
+
+}
+
+.features__container {
+  display: flex;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    gap: 44px;
+    flex-direction: column;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  // desk
+  @media screen and (min-width: 1199px) {
+    justify-content: center;
+    gap: 130px;
+  }
+}
+
+// features box-up
+
+.features__box-up {
+  order: 1;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    order: -1;
+    max-width: 418px;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    order: -1;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    padding-top: 9px;
+
+    width: 500px;
+  }
+}
+
+.features__title {
+  max-width: 430px;
+
+  // mob
+  @media screen and (max-width: 294px) {
+    font-size: 24px;
+  }
+}
+
+// features box-down
+
+.features__box-down {
+  
+  // mob
+  @media screen and (max-width: 767px) {
+    max-width: 416px;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 450px;
+    margin-left: auto;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  // mob 400px
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.features__item {
+  width: 170px;
+  padding: 20px 24px;
+
+  background-color: var(--section-features-list);
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+
+  // =======================================
+  // mob 400px
+  @media screen and (max-width: 400px) {
+    
+    // childs
+    &:nth-child(2n) {
+      margin: 0;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // mob
+  @media screen and (max-width: 767px) {
+    max-width: 193px;
+  }
+  // =======================================
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 210px;
+  }
+}
+
+.features__quantity {
+  position: relative;
+
+  @include font(700, 42px, 57px, 0.05em);
+  
+  color: var(--quantity-color);
+
+  // ================
+  // after
+  // ================
+
+  &::after {
+    content: '+';
+
+    position: absolute;
+
+    top: 6px;
+
+    display: inline-block;
+    color: var(--quantity-deco-color);
+
+    @include font(600, 16px, 22px, normal);
+  }
+}
+
+.features__text {
+  
+  @include font(600, 11px, 15px, normal);
+
+  color: var(--quantity-color);
+}
+
+
+

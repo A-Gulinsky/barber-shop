@@ -1,0 +1,193 @@
+//  price
+
+.price {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  background-color: #111319;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // ===============================================================
+  // mob
+  background-image: url(../images/price/mob/img@1x.png);
+  // retina mob
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    background-image: url(../images/price/mob/img@2x.png);
+  }
+  // ===============================================================
+
+  // ===============================================================
+  @media screen and (min-width: 481px) {
+    // tab
+    background-image: url(../images/price/tab/img@1x.png);
+  // retina tab
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/price/tab/img@2x.png);
+    }
+  }
+  // ===============================================================
+
+  // ===============================================================
+  @media screen and (min-width: 769px) {
+    // desk
+    background-image: url(../images/price/desk/img@1x.png);
+  // retina tab
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/price/desk/img@2x.png);
+    }
+  }
+  // ===============================================================
+}
+
+.price__title {
+  margin-bottom: 44px;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    @include font (700, 40px, 47px, 0.05em);
+  }
+}
+
+// price box
+
+.price__box {
+  display: flex;
+  gap: 30px;
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+  // mob
+  @media screen and (max-width: 767px) {
+    display: block;
+    
+    background-image: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+
+}
+.price__box-setting {
+  margin-bottom: 44px;
+}
+
+.price__list {
+
+  // mob 
+  @media screen and (max-width: 767px) {
+    padding: 30px 20px 30px 40px;
+
+    &--left {
+      padding-bottom: 0;
+    }
+
+    &--right {
+      padding-top: 20px;
+    }
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 32px 27px 32px 40px;
+
+    &--left {
+      padding-bottom: 0;
+    }
+
+    &--right {
+      padding-top: 20px;
+    }
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    flex-basis: 570px;
+    padding: 30px 20px;
+
+    &--left {
+      background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+    }
+
+    &--right {
+      background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
+    }
+  }
+}
+
+.price__item {
+  display: flex;
+  align-items: baseline;
+
+  color: var(--services-list);
+  // before
+  &::before {
+
+    content: '';
+
+    margin-left: 12px;
+    margin-right: 12px;
+
+    flex-grow: 1;
+    height: 1px;
+    
+    background-color: var(--deco-line-price);
+
+    // mob
+    @media screen and (max-width: 767px) {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+
+  .price__text {
+
+    // mob max 384
+    @media screen and (max-width: 384px) {
+      @include font(400, 11px, 20px, 0.02em);
+    }
+
+    // mob
+    @media screen and (min-width:385px) and (max-width: 767px) {
+      @include font(400, 14px, 20px, 0.02em);
+    }
+  }
+
+  // childs
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+}
+
+.price__span {
+  order: -1;
+
+  // mob max 302
+    @media screen and (max-width: 302px) {
+      @include font(400, 8px, 20px, 0.02em);
+    }
+
+  // mob max 384
+    @media screen and (min-width: 303) and (max-width: 384px) {
+      @include font(400, 10px, 20px, 0.02em);
+    }
+
+  // mob
+    @media screen and (min-width:385px) and (max-width: 767px) {
+      @include font(400, 14px, 20px, 0.02em);
+    }
+}
+
+.price__btn {
+  display: block;
+  margin: 0 auto;
+}

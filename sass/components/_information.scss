@@ -1,0 +1,336 @@
+// information
+
+.information {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  background-color: var(--section-form);
+  background-repeat: no-repeat;
+  // background-position: left calc(50% + 420px) center;
+
+  // ===============================================================
+    // mob
+    background-image: url(../images/information/mob/img@1x.png);
+  
+    // retina mob
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+      background-image: url(../images/information/mob/img@2x.png);
+    }
+  
+    @media screen and (max-width:767px) {
+      background-position: bottom;
+      background-size: 480px;
+    }
+    // ===============================================================
+  
+    // ===============================================================
+    @media screen and (min-width: 481px) {
+      // tab
+      background-image: url(../images/information/tab/img@1x.png);
+  
+      // retina tab
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: url(../images/information/tab/img@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 481px) and (max-width: 767px) {
+      background-position: bottom center;
+      background-size: 790px;
+    }
+
+    @media screen and (min-width: 768px) {
+      background-position: bottom calc(50% - 300px) center;
+      background-size: contain;
+    }
+    // ===============================================================
+  
+    // ===============================================================
+    
+    @media screen and (min-width: 769px) {
+      // desk
+      background-image: url(../images/information/desktop/background@1x.png);
+  
+      // retina tab
+      @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: url(../images/information/desktop/background@2x.png);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      background-size: contain;
+      background-position: left calc(50% + 580px) center;
+    }
+  
+    // ===============================================================
+}
+
+.information__container {
+  display: flex;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 168px;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 200px;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  }
+}
+
+.information__title {
+  margin-bottom: 40px;
+
+  // mob
+  @media screen and (max-width:767) {
+    font-size: 22px;
+  }
+}
+
+// form
+
+.form-box {
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    flex-basis: 570px;
+  }
+}
+
+.information__title {
+  margin-bottom: 44px;
+}
+
+.form__group {
+  display: flex;
+  gap: 30px;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    gap: 44px;
+  }
+}
+
+.form__field {
+  position: relative;
+  
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 330px;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    flex-basis: 270px;
+  }
+}
+
+.information__group {
+  margin-bottom: 44px;
+}
+
+
+
+.form__span {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+
+  display: block;
+
+  @include font(600, 11px, 15px, 0.1em);
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+
+  transform-origin: left;
+  transition: 300ms ease-in-out;
+
+  // focus
+
+}
+
+.form__input {
+  background-color: transparent;
+
+  width: 100%;
+  height: 24px;
+
+  color: var(--title-white-theme);
+
+  outline: transparent;
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  transition: 300ms ease-in-out;
+
+  &:focus {
+    border-bottom: 1px solid var(--title-white-theme);
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+}
+
+.form__input:focus + .form__span {
+  color: var(--title-white-theme);
+  transform: translateY(-25px) scale(0.8);
+}
+
+.booking__form:focus+.form__span,
+.form__input:not(:placeholder-shown)+.form__span {
+  color: #ffffff;
+  transform: translateY(-25px) scale(0.8);
+}
+
+// textarea
+
+.form__message-box {
+  margin-bottom: 44px;
+}
+
+.form__message {
+  position: relative;
+}
+
+.form__textarea {
+  
+  background-color: transparent;
+
+  width: 100%;
+  height: 76px;
+
+  resize: none;
+
+  color: var(--title-white-theme);
+
+  outline: transparent;
+
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  transition: 300ms ease-in-out;
+
+  &:focus {
+    border-bottom: 1px solid var(--title-white-theme);
+  }
+
+  &:focus + .form__span-message,
+  &:not(:placeholder-shown) + .form__span-message {
+    transform: translateY(-25px);
+    color: var(--title-white-theme);
+  }
+}
+
+.form__span-message {
+  position: absolute;
+  top: -56px;
+  left: 0;
+  
+  display: block;
+
+  @include font(600, 11px, 15px, 0.1em);
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+
+  transform-origin: left;
+  transition: 300ms ease-in-out;
+}
+
+// =========================
+// contacts
+
+.contacts {
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    gap: 30px;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+  }
+}
+
+.information__list {
+
+  // mob
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 290px;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 70px;
+  }
+}
+
+.contacts__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }  
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  gap: 16px;
+
+  @include font(400, 18px, 30px, 0.02em);
+
+  color: var(--contacts-list);
+
+  // map link
+
+  &--map {
+    font-weight: 700;
+  }
+}
+
+.contacts__icon-map {
+  margin-top: 4px;
+  align-self: baseline;
+}
+
+.contacts__span {
+  display: inline-block;
+  width: 220px;
+}
+
+.contacts__span-mail {
+  display: block;
+  text-decoration: underline;
+}
+
+.information__title-box {
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 93px;
+  }
+}

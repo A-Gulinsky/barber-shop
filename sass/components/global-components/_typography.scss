@@ -1,0 +1,75 @@
+//  typography
+
+.uppertitle {
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  @include font(600, 11px, 15px, normal);
+  text-transform: uppercase;
+  
+  color: var(--title-color);
+
+  // before
+  &::before {
+    content: '';
+
+    display: inline-block;
+
+    width: 60px;
+    height: 1px;
+
+    background-color: var(--deco-uppertitle-color);
+  }
+}
+
+.uppertitle--dark-theme {
+  color: var(--dark-theme-price);
+
+  &::before {
+    background-color: var(--dark-theme-price);
+  }
+}
+
+.slider__uppertitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.slider__uppertitle::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.uppertitle--white-theme {
+  color: var(--title-white-theme);
+
+  &::before {
+    background-color: var(--title-white-theme);
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-family: var(--additional-font);
+  @include font(700, 42px, 49px, 0.05em);
+
+  color: var(--title-color);
+
+}
+
+.title--white-theme {
+  color: var(--title-white-theme);
+}
+
+.undertitle {
+
+  @include font (400, 18px, 30px, 0.02em);
+
+  color: var(--text-color);
+}
+
+.undertitle--silver-theme {
+  color: var(--contacts-list);
+}

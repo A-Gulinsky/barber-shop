@@ -1,0 +1,161 @@
+//  team
+
+.team {
+  background-color: var(--section-barbers-team);
+}
+
+.team__uppertitle {
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 120px;
+  }
+}
+
+.team__title {
+  margin-bottom: 44px;
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 120px;
+  }
+}
+
+.team__list {
+  display: flex;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  // desk
+  @media screen and (min-width: 1199px) {
+    gap: 30px;
+  }
+}
+
+.team__item {
+
+  // hover,focus
+  &:hover .team__item-text,
+  &:focus .team__item-text {
+    transition: transform 300ms ease;
+     transform: translateY(-50%);
+   }
+}
+
+.team__box {
+  position: relative;
+  overflow: hidden;
+
+  text-align: center;
+}
+
+.team__img {
+  
+  // hover,focus
+  .team__item:hover & {
+    filter: blur(1px);
+  }
+}
+
+.team__item-text {
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translateY(110%);
+
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  
+  color: #fff;
+
+  transition: transform 300ms ease;
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    transform: translateY(140%);
+  }
+}
+
+.team__item-box {
+
+  padding-top: 30px;
+
+  text-align: center;
+
+  // mob
+  @media screen and (max-width: 767px) {
+    max-width: 418px;
+  }
+
+  // tab
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 450px;
+  }
+
+  // desk
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+
+.team__name {
+  margin-bottom: 8px;
+
+  @include font (400, 18px, 25px, 0.02em);
+
+  color: var(--title-color);
+}
+
+.team__position {
+  margin-bottom: 30px;
+
+  @include font(400, 14px, 19px, 0.02em);
+
+  color: var(--team-position);
+}
+
+.team__list-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team__item-social {}
+
+.team__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50px;
+
+  background-color: var(--main-background);
+
+  // hover,focus
+  &:hover .team__icon {
+    fill: var(--main-hover-color);
+  }
+}
+
+.team__icon {
+  transition: 300ms ease-in-out;
+}

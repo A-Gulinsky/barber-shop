@@ -1,0 +1,54 @@
+//  modal agreement
+
+.modal__agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-bottom: 15px;
+
+  cursor: default;
+}
+
+
+
+//  agreemenet
+.modal__agree-icon {}
+
+.modal__agree-input {
+
+  &:checked + .modal__agree-icon .modal__icon-checked {
+    opacity: 1;
+  }
+
+  &:checked + .modal__agree-icon .modal__icon-unchecked {
+    opacity: 0;
+  }
+}
+
+.modal__icon-unchecked {
+  transition: 300ms ease-in-out;
+}
+
+.modal__icon-checked {
+  transition: 300ms ease-in-out;
+  opacity: 0;
+}
+
+.modal__agree-span {
+  // mob
+  @media screen and (max-width: 767px) {
+    @include font (700, 11px, normal, normal);
+  }
+}
+
+.modal__agree-link {
+
+  color: var(--main-hover-color);
+
+  // mob
+  @media screen and (max-width: 767px) {
+    @include font (400, 11px, normal, normal);
+  }
+}
