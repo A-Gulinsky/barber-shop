@@ -8,6 +8,7 @@
   gap: 20px;
 
   @include font(600, 11px, 15px, normal);
+  
   text-transform: uppercase;
   
   color: var(--title-color);
@@ -53,10 +54,10 @@
   margin-bottom: 20px;
 
   font-family: var(--additional-font);
+
   @include font(700, 42px, 49px, 0.05em);
 
   color: var(--title-color);
-
 }
 
 .title--white-theme {
